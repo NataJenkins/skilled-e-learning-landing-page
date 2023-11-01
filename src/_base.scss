@@ -23,6 +23,7 @@ $gradient-2: linear-gradient(180deg, #4851ff 0%, #f02aa6 99.92%);
     line-height: 70px;
     @media (max-width: $bp-tablet) {
         font-size: 40px;
+        line-height: normal;
     }
 }
 .heading-l {

@@ -56,7 +56,6 @@
                 }
                 .p-m {
                     margin-bottom: 25px;
-                    color: $gray;
                 }
                 .image {
                     top: -245px;
@@ -67,6 +66,32 @@
                     &-tablet {
                         height: 715px;
                         display: block;
+                    }
+                }
+            }
+        }
+    }
+    @media (max-width: $bp-mobile) {
+        padding: 16px 22px;
+        header {
+            .nav {
+                margin-bottom: 45px;
+            }
+            .header {
+                .details {
+                    width: 100%;
+                }
+                .image {
+                    position: relative;
+                    top: 0;
+                    right: 0;
+                    &-tablet {
+                        display: none;
+                    }
+                    &-mobile {
+                        width: 100%;
+                        display: block;
+                        margin-top: 40px;
                     }
                 }
             }
