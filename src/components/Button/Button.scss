@@ -1,0 +1,19 @@
+@import "../../base";
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;700;800&display=swap");
+.button {
+    font-family: "Plus Jakarta Sans";
+    border: none;
+    padding: 14px 32px;
+    border-radius: 28px;
+    color: $white;
+    font-weight: 700;
+    &.primary {
+        background-color: $dark-blue;
+    }
+    &.secondary {
+        background-image: $gradient-1;
+    }
+    &.tertiary {
+        background-image: $gradient-2;
+    }
+}
