@@ -5,12 +5,36 @@
     box-sizing: border-box;
     width: 100vw;
     padding: 38px 165px;
+    color: $dark-blue;
+    border: 2px solid black;
+    overflow: hidden;
     header {
         width: 100%;
         .nav {
             display: flex;
             justify-content: space-between;
             align-items: center;
+            margin-bottom: 185px;
+        }
+        .header {
+            position: relative;
+            margin-bottom: 29px;
+            .details {
+                width: 35%;
+            }
+            .p-m {
+                margin-bottom: 40px;
+                color: $gray;
+            }
+
+            .image {
+                position: absolute;
+                top: -410px;
+                right: -489px;
+                &-desktop {
+                    height: 935px;
+                }
+            }
         }
     }
 }
