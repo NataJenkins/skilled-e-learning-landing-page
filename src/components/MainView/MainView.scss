@@ -34,6 +34,41 @@
                 &-desktop {
                     height: 935px;
                 }
+                &-tablet {
+                    display: none;
+                }
+                &-mobile {
+                    display: none;
+                }
+            }
+        }
+    }
+    @media (max-width: $bp-tablet) {
+        padding: 18px 39px;
+        header {
+            .nav {
+                margin-bottom: 105px;
+            }
+            .header {
+                margin-bottom: 25px;
+                .details {
+                    width: 60%;
+                }
+                .p-m {
+                    margin-bottom: 25px;
+                    color: $gray;
+                }
+                .image {
+                    top: -245px;
+                    right: -340px;
+                    &-desktop {
+                        display: none;
+                    }
+                    &-tablet {
+                        height: 715px;
+                        display: block;
+                    }
+                }
             }
         }
     }

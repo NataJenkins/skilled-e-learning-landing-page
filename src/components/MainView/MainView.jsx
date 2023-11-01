@@ -2,6 +2,7 @@ import "./MainView.scss";
 import Button from "../Button/Button";
 import DarkLogo from "../../assets/logo-dark.svg";
 import HeroDesktop from "../../assets/image-hero-desktop@2x.webp";
+import HeroTablet from "../../assets/image-hero-tablet@2x.webp";
 export default function MainView() {
     return (
         <div className="main-container">
@@ -28,6 +29,7 @@ export default function MainView() {
                             alt=""
                             className="image-desktop"
                         />
+                        <img src={HeroTablet} alt="" className="image-tablet" />
                     </div>
                 </div>
             </header>

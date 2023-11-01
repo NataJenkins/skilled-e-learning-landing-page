@@ -21,6 +21,9 @@ $gradient-2: linear-gradient(180deg, #4851ff 0%, #f02aa6 99.92%);
     font-weight: 800;
     font-size: 56px;
     line-height: 70px;
+    @media (max-width: $bp-tablet) {
+        font-size: 40px;
+    }
 }
 .heading-l {
     font-family: "Plus Jakarta Sans", sans-serif;
@@ -46,6 +49,9 @@ $gradient-2: linear-gradient(180deg, #4851ff 0%, #f02aa6 99.92%);
     font-weight: 500;
     font-size: 18px;
     line-height: 28px;
+    @media (max-width: $bp-tablet) {
+        font-size: 16px;
+    }
 }
 .p-s {
     font-family: "Plus Jakarta Sans", sans-serif;
