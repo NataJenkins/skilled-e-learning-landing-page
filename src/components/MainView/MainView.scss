@@ -102,6 +102,9 @@
                 grid-row-gap: 56px;
             }
         }
+        .footer {
+            padding: 43px 40px;
+        }
     }
     @media (max-width: $bp-mobile) {
         padding: 16px 22px;
@@ -136,6 +139,9 @@
                 grid-template-rows: auto repeat(5, 259px);
                 grid-row-gap: 40px;
             }
+        }
+        .footer {
+            padding: 43px 16px;
         }
     }
 }
