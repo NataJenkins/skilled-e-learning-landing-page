@@ -30,12 +30,13 @@ export default function Card({ type, title, content, actionText }) {
 
     return (
         <div className={`card-container ${type}`}>
-            <img src={getIcon(title)} alt="" />
+            {type === "content" ? <img src={getIcon(title)} alt="" /> : null}
+
             <h2 className={type === "title" ? "heading-m" : "heading-s"}>
                 {title}
             </h2>
             <p className="p-m">{content}</p>
-            <a href="/">{actionText}</a>
+            <a href="javascript:;">{actionText}</a>
         </div>
     );
 }
