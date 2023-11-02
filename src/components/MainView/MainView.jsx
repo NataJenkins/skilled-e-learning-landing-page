@@ -1,6 +1,7 @@
 import "./MainView.scss";
 import Button from "../Button/Button";
 import DarkLogo from "../../assets/logo-dark.svg";
+import LightLogo from "../../assets/logo-light.svg";
 import HeroDesktop from "../../assets/image-hero-desktop@2x.webp";
 import HeroTablet from "../../assets/image-hero-tablet@2x.webp";
 import HeroMobile from "../../assets/image-hero-mobile@2x.webp";
@@ -51,6 +52,10 @@ export default function MainView() {
                     ))}
                 </div>
             </main>
+            <footer className="footer">
+                <img src={LightLogo} alt="" />
+                <Button text="Get Started" tertiary />
+            </footer>
         </div>
     );
 }
