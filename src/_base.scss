@@ -31,12 +31,18 @@ $gradient-2: linear-gradient(180deg, #4851ff 0%, #f02aa6 99.92%);
     font-weight: 800;
     font-size: 40px;
     line-height: 51px;
+    margin: 0;
 }
 .heading-m {
     font-family: "Plus Jakarta Sans", sans-serif;
     font-weight: 800;
     font-size: 32px;
     line-height: 40px;
+    margin: 0;
+    @media (max-width: $bp-tablet) {
+        font-size: 24px;
+        line-height: normal;
+    }
 }
 .heading-s {
     font-family: "Plus Jakarta Sans", sans-serif;

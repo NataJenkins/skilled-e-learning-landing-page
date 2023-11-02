@@ -80,6 +80,16 @@
                 }
             }
         }
+        main {
+            margin-top: 170px;
+            .cards-grid {
+                display: grid;
+                grid-template-columns: repeat(2, minmax(100px, 339px));
+                grid-template-rows: repeat(3, minmax(259px, 259px));
+                grid-column-gap: 10px;
+                grid-row-gap: 56px;
+            }
+        }
     }
     @media (max-width: $bp-mobile) {
         padding: 16px 22px;
