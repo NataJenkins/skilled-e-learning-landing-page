@@ -36,7 +36,7 @@ export default function Card({ type, title, content, actionText }) {
                 {title}
             </h2>
             <p className="p-m">{content}</p>
-            <a href="javascript:;">{actionText}</a>
+            {type === "content" ? <a href="/">{actionText} </a> : null}
         </div>
     );
 }
