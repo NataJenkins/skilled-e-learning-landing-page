@@ -4,7 +4,10 @@ import DarkLogo from "../../assets/logo-dark.svg";
 import HeroDesktop from "../../assets/image-hero-desktop@2x.webp";
 import HeroTablet from "../../assets/image-hero-tablet@2x.webp";
 import HeroMobile from "../../assets/image-hero-mobile@2x.webp";
+import cardContents from "../contants";
+import Card from "../Card/Card";
 export default function MainView() {
+    const cards = cardContents;
     return (
         <div className="main-container">
             <header>
@@ -35,6 +38,19 @@ export default function MainView() {
                     </div>
                 </div>
             </header>
+            <main>
+                <div className="cards-grid">
+                    {cards.map((card) => (
+                        <Card
+                            key={card.title}
+                            type={card.type}
+                            title={card.title}
+                            content={card.content}
+                            actionText={card.actionText}
+                        />
+                    ))}
+                </div>
+            </main>
         </div>
     );
 }

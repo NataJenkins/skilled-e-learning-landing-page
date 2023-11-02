@@ -1,0 +1,33 @@
+@import "../../_base.scss";
+.card-container {
+    padding: 64px 32px 40px 32px;
+    border-radius: 15px;
+
+    position: relative;
+    &.title {
+        color: $white;
+        background-image: $gradient-1;
+    }
+
+    &.content {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    img {
+        position: absolute;
+        top: -26px;
+    }
+    p {
+        color: $gray;
+    }
+    a {
+        text-decoration: none;
+        font-family: "Plus Jakarta Sans", sans-serif;
+        font-weight: 700;
+        background: $gradient-1;
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+}
